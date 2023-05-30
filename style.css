@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+@font-face {
+    font-family: 'DM Sans';
+    src: url(./font/DMSans-Medium.ttf);
+}
+body{
+    background: #191919;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 43px 50px  ;
+}header ul{
+    display: flex;
+    gap: 40px;
+}
+header ul a{
+    text-decoration: none;
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 27px;
+color: #FFFFFF;
+}
+header ul li a:hover{
+    color: #118DA8;
+}
+header .bars {
+    display: none;
+}
+main .main_item{
+    align-items: center;
+    margin: 40px 70px 0;
+    display: flex;
+    gap: 60px;
+}
+.main_desc{
+    width: 535px;
+}
+.main_desc img{
+    margin-top: 90px;
+}
+main .main_desc p{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 70px;
+line-height: 88px;
+letter-spacing: 3.2px;
+color: #FFFFFF;
+}
+main aside{
+    display: flex;
+    justify-content: space-between;
+    margin: 90px 70px 66px;
+} 
+main aside p{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 79px;
+    letter-spacing: 2.88px;
+    color: #FFFFFF;
+}
+main aside button{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 27px;
+background: #118DA8;
+border-radius: 6px;
+padding: 20px 35px;
+color: #FFFFFF;
+}   
+.sec1{
+    margin: 0 70px 60px; 
+}
+.sec1 .box{
+    margin-top: 60px;
+    background: #000000;
+border-radius: 32px;
+padding: 40px ;
+display: flex;
+gap: 53px;
+}
+.sec1 .box .box_desc button:nth-child(1){
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    background: #191919;
+    border-radius: 6px;
+    padding: 0 16px;
+    color: #FFFFFF;
+}
+.sec1 .box .box_desc p{
+    padding-top: 48px;
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 27px;
+color: #118DA8;
+}
+.sec1 .box .box_desc h2{
+    padding-top: 18px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 69px;
+line-height: 70px;
+letter-spacing: 2.56px;
+color: #FFFFFF;
+}
+.sec1 .box .box_desc p:nth-child(4){
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 33px;
+padding-top: 28px;
+color: rgba(255, 255, 255, 0.7);
+}
+.sec1 .box .box_desc .btn button{
+    margin-top: 18px;
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+background: #118DA8;
+border-radius: 6px;
+padding: 12px 15px 12px 20px;
+color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:990px) {
+    /* ===Header=== */
+    header{
+        padding: 30px 40px;
+    }
+    header ul{
+        display: none;
+    }
+    header .bars{
+        display: block;
+        font-size: 30px;
+        color: #118DA8;
+    }
+    header .bars:hover{
+        color: #FFFFFF
+    }
+    /* === main === */
+    main .main_item{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main .main_item .main_img{
+        display: flex;
+        justify-content: center;
+    }
+    main .main_item .main_desc{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    main .main_item .main_desc .main_desc_img{
+        /* margin-top: 40px; */
+        display: flex;
+        justify-content: center;
+    }
+    main .main_item .main_desc .main_desc_img img{
+        margin-top: 40px;
+    }
+    main .main_item .main_desc p{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    main .main_item .main_img img{
+        width: 100%;
+    }
+    main aside{
+        display: block;
+        text-align: center;
+    }
+    main aside p{
+        font-size: 38px;
+    }
+    main aside .btn{
+        margin-top: 20px;
+    }
+    /* === section === */
+    .sec1 .box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec1 .box .box_img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .sec1 .box .box_img img{
+        width: 90%;
+    }
+    .sec1 .box .box_desc h2{
+        font-size: 39px;
+        line-height: 50px;
+    }
+    .sec1 .box .btn{
+        display: flex;
+        justify-content: center;
+    }
+    .sec1 .box .box_desc p{
+        font-size: 15px;
+    }
+}
